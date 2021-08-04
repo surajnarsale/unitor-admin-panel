@@ -26,3 +26,12 @@
 	margin-right: 10px;
 	color: #555;
 }
+
+.topAvatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8);
+	background-size: cover;
+}

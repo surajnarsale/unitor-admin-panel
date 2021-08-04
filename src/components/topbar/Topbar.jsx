@@ -17,6 +17,7 @@ export default function Topbar() {
 					<div className="topbarIconContainer">
 						<Settings />
 					</div>
+					<div alt="profile-image" className="topAvatar" />
 				</div>
 			</div>
 		</div>
