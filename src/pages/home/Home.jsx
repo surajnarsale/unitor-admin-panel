@@ -3,6 +3,7 @@ import './home.css';
 import FeaturedInfo from '../../components/featuredInfo/FeaturedInfo';
 import { userData } from '../../dummyData';
 import Chart from '../../components/chart/Chart';
+import WidgetSm from '../../components/widgetSm/WidgetSm';
 
 export default function Home() {
 	return (
@@ -14,6 +15,9 @@ export default function Home() {
 				grid
 				dataKey="Active User"
 			/>
+			<div className="homeWidgets">
+				<WidgetSm />
+			</div>
 		</div>
 	);
 }
