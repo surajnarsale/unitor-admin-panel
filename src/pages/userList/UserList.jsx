@@ -8,6 +8,10 @@ import { useState } from 'react';
 export default function UserList() {
 	const [data, setData] = useState(userRows);
 
+	const handleDelete = (id) => {
+		setData(data.filter((item) => item.id !== id));
+	};
+
 	const columns = [
 		{ field: 'id', headerName: 'ID', width: 90 },
 		{
@@ -44,7 +48,10 @@ export default function UserList() {
 						<Link to={'/user/' + params.row.id}>
 							<button className="userListEdit">Edit</button>
 						</Link>
-						<DeleteOutline className="userListDelete" />
+						<DeleteOutline
+							className="userListDelete"
+							onClick={() => handleDelete(params.row.id)}
+						/>
 					</>
 				);
 			},
